@@ -37,7 +37,7 @@ pipeline {
       stage("Tag and Push") {
          steps {
                 sh "docker tag jenkins-pipeline_web:latest Sh8wN/jenkins-app:${BUILD_NUMBER}"
-                sh "docker login -u Sh8wN -p T*27ulydldl"
+                sh "docker login -u Sh8wN -p T*27ulydldl"4
                 sh "docker push Sh8wN/jenkins-app:${BUILD_NUMBER}"
          }
       }
